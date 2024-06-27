@@ -7,6 +7,8 @@ import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.co
 import { ListarClientesComponent } from './listar-clientes/listar-clientes.component';
 import { RegistrarClientesComponent } from './registrar-clientes/registrar-clientes.component';
 import { ActualizarClientesComponent } from './actualizar-clientes/actualizar-clientes.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ActualizarClientesComponent } from './actualizar-clientes/actualizar-cl
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()
